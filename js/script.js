@@ -18,3 +18,12 @@ alert(isHuman);
 
 const whoIsPutin = prompt("Tell me who is Putin?");
 alert("Putin - " + whoIsPutin);
+
+//Number(variable) - приведення до числа
+//Number.parseInt(variable) - перетворення рядка у число доки це можливо
+// 12.46ufg73 -> 12
+// Number.parseFloat(variable) - 12.46ufg73 -> 12.46
+// Number.isNaN(variable) - true якщо не число
+//при додаванні чисел з точками треба використовувати округлення
+// без окреглення -> 0.17 + 0.24 = 0.41000000000000003
+// (0.17+0.24).toFixed(2) = 0.41
