@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 let someText = 'Hello to me!';
 const SOME_ANOTHER_TEXT = 'Hello to all Ukrainian people!';
 let something = null;
@@ -52,3 +52,6 @@ alert("Putin - " + whoIsPutin);
 // console.log(minifiedCssFileNames) -> "styles.min.css, about.min.css, portfolio.min.css"
 
 // string.slice (startIndex, endIndex) -> створює копію частини рядка згідно індексу
+
+// Тернарний оператор
+// const message = умова ? вираз1 (якщо true) : вираз2 (якщо false)
