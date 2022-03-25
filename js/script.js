@@ -11,13 +11,13 @@ console.log(someText.length, " type is: ", typeof someText.length);
 console.log(typeof SOME_ANOTHER_TEXT);
 console.log(typeof something);
 console.log(typeof isItWorks);
-alert(SOME_ANOTHER_TEXT);
+//alert(SOME_ANOTHER_TEXT);
 
-const isHuman = confirm("Are you think puilo is crazy?");
-alert(isHuman);
+//const isHuman = confirm("Are you think puilo is crazy?");
+//alert(isHuman);
 
-const whoIsPutin = prompt("Tell me who is Putin?");
-alert("Putin - " + whoIsPutin);
+//const whoIsPutin = prompt("Tell me who is Putin?");
+//alert("Putin - " + whoIsPutin);
 
 //Number(variable) - приведення до числа
 //Number.parseInt(variable) - перетворення рядка у число доки це можливо
@@ -55,3 +55,26 @@ alert("Putin - " + whoIsPutin);
 
 // Тернарний оператор
 // const message = умова ? вираз1 (якщо true) : вираз2 (якщо false)
+
+const btnDataReset = document.querySelector('button[data-reset]');
+const btnAdd = document.querySelector('button[data-add]');//в дужках css-селектор нашого елементу
+//console.dir(btnAdd);-показує властивості об'єкту
+const inputValue = document.querySelector('input[data-value]');//отримуємо данні з вводу
+//btnAdd.textContent = 'New button text'; - зміна властивості. В даному випадку тексту кнопки
+const outputEl = document.querySelector('.js-output span');
+let total = 0;
+btnAdd.addEventListener('click', function () {
+    const value = Number(inputValue.value);
+    total += value;
+    console.log('Done', total);
+    outputEl.textContent = total;
+    inputValue.value = '';
+});
+
+btnDataReset.addEventListener('click', function () {
+    total = 0;
+    outputEl.textContent = total; 
+});
+//додали слухача подій. Перший аргумент - спрацювання по кліку,
+// другий - функція, яка при цьому визивається.
+//inputValue.value - повертає РЯДОК!!!
