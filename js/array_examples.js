@@ -44,13 +44,13 @@
 // const message = logins.includes(loginToFind) ? `Login ${loginToFind} exists!` : "Where is no such login";
 // console.log(message);
 
-const numbers = [17, 24, 3, 85, -46, 1, 10, -1, 0, -5];
-let smallestNumber = numbers[0];
+// const numbers = [17, 24, 3, 85, -46, 1, 10, -1, 0, -5];
+// let smallestNumber = numbers[0];
 
-for (const number of numbers) {
-    if (number < smallestNumber) {
-        smallestNumber = number;
-    }
-}
+// for (const number of numbers) {
+//     if (number < smallestNumber) {
+//         smallestNumber = number;
+//     }
+// }
 
-console.log(smallestNumber);
+// console.log(smallestNumber);
